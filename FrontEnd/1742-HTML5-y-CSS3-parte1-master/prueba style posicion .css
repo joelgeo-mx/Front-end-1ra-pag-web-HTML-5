@@ -1,0 +1,47 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    /* padding que viene a ser el espaciamiento en margenes, se selecciona con 20 superior e inferior y cero en los laterales */
+}
+
+.red{
+    position: relative;
+    background-color: red;
+    top:90px;
+    right: 25px;
+}
+/* .box{
+    width: 940px;
+    /* se decidio colocar 940px debido al formato standard de las pantallas 1200px */
+
+    /* aqui se opta por margen en posicion 0 y automatico en los bordes, por los distintos tamaños de pantalla */
+    /* al darle el valor automatico a los margenes lo que hacemos es delegar la operacion al sistema... Se encargara de ajustar al max de anchura de la pantalla, dividirlo entre dos y agregar la mitad a cada uno de los lados */
+.blue{
+    position:relative;
+    background-color: blue;
+    top: 35px;
+    right: 80px:
+    left: 0px;
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0px;
+
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    /* Esta propiedad tiene 4 parametros 1. arriba 2. derecha 3. abajo 4. izquierda (15px en este caso) */
+}
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    
+}

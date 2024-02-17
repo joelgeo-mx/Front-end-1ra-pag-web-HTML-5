@@ -1,0 +1,109 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    /* padding que viene a ser el espaciamiento en margenes, se selecciona con 20 superior e inferior y cero en los laterales */
+}
+
+.box{
+    width: 940px;
+    /* se decidio colocar 940px debido al formato standard de las pantallas 1200px */
+    position: relative;
+    margin: 0 auto;
+    /* aqui se opta por margen en posicion 0 y automatico en los bordes, por los distintos tamaños de pantalla */
+    /* al darle el valor automatico a los margenes lo que hacemos es delegar la operacion al sistema... Se encargara de ajustar al max de anchura de la pantalla, dividirlo entre dos y agregar la mitad a cada uno de los lados */
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0px;
+
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    /* Esta propiedad tiene 4 parametros 1. arriba 2. derecha 3. abajo 4. izquierda (15px en este caso) */
+}
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+     
+}
+
+nav a:hover{
+/* con esta funcion se puede hacer que se cambie la estetica de los elementos al pasar el mouse sobre ellos */
+    color:#c78c19;
+    text-decoration: underline;
+}
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    /* este es el espacio entre los items de la lista y el encabezado */
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    /* en esta linea se detecta que los items estan tomando un espacio irregular dentro de la pagina, por lo que se ajusta el ancho al 30% por item, de esta manera cada item tomara un espacio regular y el 10% restante sera el espacio entre cada item */
+    vertical-align: top;
+    /* background-color: #CCCCCC; */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* esta propiedad hace que el limite del la distribucion de pixeles en cada elemento sea el borde de cada elemento */
+    border: 2px solid #000000;
+    /* con esta linea se compactan las 3 propiedades en una. Es importante el orden */
+    /* border-color: black;
+    border-width:2px;
+    border-style: solid; */
+    border-radius: 10px;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+    /* font-size: 33px; */
+
+}
+
+.productos li:active{
+    border-color: #088c19
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.Copyright{
+    color:#ffffff;
+    font-size: 13px;
+    margin: 20px;
+    
+}
